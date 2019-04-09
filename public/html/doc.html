@@ -1,0 +1,444 @@
+<!--
+
+Editor:HTML editor is a tool that helps you to edit and create HTML(Hypertext Markup Language) code. 
+       It is a text-based tool which lets you edit your source code directly.
+Editors: we have few editors such as Notepad++,visual studio,webstrome,Atom etc.
+
+Styntax:
+<!DOCTYPE html>:The <!DOCTYPE> declaration is not an HTML tag 
+                it is an instruction to the web browser about what version of HTML the page is written in.
+
+<html>: The HTML document itself begins with <html> and ends with </html>.
+<head>: To deleclare the Exleternal files such as CSS,JS,CDN...
+<body>: The visible part of the HTML document is between <body> and </body>.
+
+Elements:
+
+An HTML element usually consists of a start tag and end tag, with the content inserted in between:
+
+<tagname>Content goes here...</tagname>
+The HTML element is everything from the start tag to the end tag:
+
+Types of tages:
+--------------
+Constant Tags:<Html></html>
+Fixed Tags:<div><p><span><img>... etc.
+indipedent tages:<br><hr>etc..
+
+Example:
+<p>My first paragraph.</p>
+<h1>My First Heading</h1>
+<span>phani</span>
+
+Two types of elements In HTML
+-----------------------------
+Block level                      inline       
+<div>                           <span>
+<p>                              <a>
+<h1>-<h6>                         <img>
+<form>                            <input>..Etc.
+<ul> etc..
+
+Attributes:
+-----------
+All HTML elements can have attributes
+Attributes provide additional information about an element
+Attributes are always specified in the start tag
+Attributes usually come in name/value pairs like: name="value" Id="head" class="" etc...
+
+Headings:
+---------
+Headings are defined with the <h1> to <h6> tags.
+
+<h1> defines the most important heading. <h6> defines the least important heading.
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+The HTML <p> element defines a paragraph:
+
+Paragraphs
+----------
+The HTML <p> element defines a paragraph:
+<p> I'm a Software employee</p>
+
+Styeles:
+-------
+We can  style the HTML element with the style attribute.
+
+syntex:
+-------
+<tagname style="property:value;">
+
+Ex:
+---
+<p> I'm a Software employee</p>
+<p style="color:red;">I'm a Software employee</p>
+<h2 style="color:blue;">I'm a Software employee</h2>
+<p style="font-size:50px;">I'm a Software employee</p>
+
+Formating of Elements:
+
+we can also defines special elements for defining text with a special meaning.
+
+Elements like <b> and <i> for formatting output, like bold or italic text.
+
+Formatting elements were designed to display special types of text:
+
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Small text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+
+Examples:
+--------
+<strong>I'm a Software employee</strong>
+<i>This I'm a Software employee</i>
+<b>I'm a Software employee</b>
+<em>This text is emphasized.</em> Etc...
+
+Comments:
+---------
+We can add comments to your HTML source by using the following syntax:
+
+<!- Write your comments here ->
+
+CSS in HTML:
+-----------
+CaseCadingStyleSheets
+CSS describes how HTML elements are to be displayed on Browser.
+
+CSS can be added to HTML elements in 3 ways:
+
+Inline - by using the style attribute in HTML elements
+Internal - by using a <style> element in the <head> section
+External - by using an external CSS file Ex: <link rel="stylesheet" href="styles.css">
+
+HyperLink
+--------
+HTML links are hyperlinks.
+You can click on a link and jump to another document.
+In HTML, links are defined with the <a>-Anchor tag:
+The href attribute specifies the destination address
+
+Syntex:
+------
+<a href="url">link text</a>
+
+Examples:
+<a href="https://www.amazon.in">Amazon</a>
+
+Local Links:
+-----------
+<a href="../css/core.css">LocalLink</a>
+
+TargetAttribute:
+---------------
+The target attribute specifies where to open the linked document.
+
+The target attribute can have one of the following values:
+
+_blank - Opens the linked document in a new window or tab
+_self - Opens the linked document in the same window..
+_parent - Opens the linked document in the parent frame
+
+Examples:
+---------
+<a href="https://www.amazon.in" target="_blank">Amazon</a>
+<a href="https://www.amazon.in" target="_self">Amazon</a>
+
+Images in HTML
+--------------
+In HTML images are defined with the <img> tag.
+
+The <img> tag is selfclosing tag it contains attributes only.
+
+The src attribute specifies the URL (web address) of the image:
+
+The alt attribute provides an alternate text for an image.
+
+Examples:
+--------
+<img src="../wallpers/floewrs.jpg" alt="wallpaper" styel="width:500px;height:600px;">
+
+Tables
+------
+An HTML table is defined with the <table> tag.
+
+Each table row is defined with the <tr> tag. A table header is defined with the <th> tag.
+
+A table data/cell is defined with the <td> tag.
+
+Syntex:
+<table>
+<tr>
+    <th>
+        table Head..
+    </th>
+<tr>
+<tr>
+   <td>
+       table data..
+   </td>
+</tr>
+</table>
+
+Example:
+--------
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<table style="width:50%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>phani</td>
+    <td>Kumar</td> 
+    <td>27</td>
+  </tr>
+  <tr>
+    <td>Akhil</td>
+    <td>Reddy</td> 
+    <td>28</td>
+  </tr>
+</table>
+
+Cell span in Tables
+-------------------
+Colspan and rowspan
+
+To make a cell span more than one column, use the colspan attribute:
+
+Examples:
+--------
+<table style="width:50%">
+  <tr>
+    <th>Name</th>
+    <th colspan="2">Telephone</th>
+  </tr>
+  <tr>
+    <td>phani</td>
+    <td>12334661</td>
+    <td>12164694</td>
+</tr>
+
+To make a cell span more than one row, use the rowspan attribute:
+
+Example:
+--------
+<table style="width:100%">
+  <tr>
+    <th>Name:</th>
+    <td>Phani</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Telephone:</th>
+    <td>166693158</td>
+  </tr>
+  <tr>
+    <td>56511656</td>
+  </tr>
+</table>
+
+Lists in HTML
+------------
+UL: unorderded list
+OL: Orderded LIst.
+
+Unordered HTML List
+-----------------
+<ul> tag is used for unordered list. Each list item starts with the <li> tag.
+
+Example:
+<ul>
+  <li>phani</li>
+  <li>Vijay</li>
+  <li>Akhil</li>
+</ul>
+
+Orderded List:
+--------------
+<ol> tag is used for ordered list. Each list item starts with the <li> tag.
+
+Example:
+--------
+<ol>
+  <li>phani</li>
+  <li>Vijay</li>
+  <li>Akhil</li>
+</ol>
+
+JavaScript in HTML
+------------------
+The <script> tag is used to define a client-side script (JavaScript).
+
+Example:
+-------
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="script"></p>
+
+<script>
+function fun() { 
+  document.getElementById("script").innerHTML = "Hello world";
+}
+</script>
+
+Layout in HTML
+--------------
+Layout means the way  we can to display webpage in browser..
+
+in HTML4 and Before versions layouts can be disign by using <div> for every section.
+
+In HTML5 we have new semantic elements that define the different parts of a web page:
+
+<header> - Defines a header for a document or a section
+<nav> - Defines a container for navigation links
+<section> - Defines a section in a document
+<article> - Defines an independent self-contained article
+<aside> - Defines content aside from the content (like a sidebar)
+<footer> - Defines a footer for a document or a section
+<details> - Defines additional details
+<summary> - Defines a heading for the <details> element
+
+HTML Layout Techniques:
+----------------------
+CSS float property
+CSS flexbox
+CSS framework
+CSS grid
+
+Forms in HTML:
+-------------
+In HTML <form> tag is used define a form.
+
+Syntax:
+-------
+<form>
+form elements
+</form>
+
+Form Elements:
+--------------
+<input>
+--------
+<input type="text">	Defines a one-line text input field
+<input type="radio">	Defines a radio button (for selecting one of many choices)
+<input type="submit">	Defines a submit button (for submitting the form)
+
+Example:
+        
+<form action="#">
+  <input name="firstname" type="text"> 
+  <input name="lastname" type="text">
+   <input type="password" name="psw">
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+  <input type="checkbox" name="Home" value="home"> I'm in home<br>
+  <input type="checkbox" name="office" value="office"> I'm in office. 
+  <input type = "submit">
+</form>
+
+
+
+<select>
+--------
+Example:
+<select name="friends">
+  <option value="volvo">phani</option>
+  <option value="saab">akhil</option>
+  <option value="fiat">ram</option>
+  <option value="audi">vijay</option>
+</select>
+
+<textarea>
+<textarea name="message" rows="10" cols="30">
+i'm software employee.
+</textarea>
+
+HTML5
+-----
+Canvas:
+------
+The HTML <canvas> element is used to draw graphics using JavaScript.
+
+Example:
+-------
+<canvas id="canvas" width="200" height="100" style="border:1px solid ;">
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("canvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke();
+</script> 
+
+SVG in HTML
+----------
+SVG stands for Scalable Vector Graphics
+SVG is used to define graphics for the Web
+
+
+Examples:
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="red" />
+</svg>
+
+<svg width="400" height="180">
+  <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+  style="fill:red;" />
+</svg>
+
+HTML5 API's
+-----------
+Geolaction.
+webstorage
+
+GeoLaction:
+-----------
+The HTML Geolocation API is used to locate a user's position. Using javascript..
+The getCurrentPosition() method is used to return the user's position.
+
+Example:
+-------
+<button onclick="getLocation()">GeT Location</button>
+
+<p id="geo"></p>
+
+<script>
+var x = document.getElementById("geo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>

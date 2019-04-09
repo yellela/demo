@@ -1,0 +1,579 @@
+/*
+CSS CaseCadingStyleSheets:
+-------------------------
+CSS is a language that describes the style of an HTML document.
+
+CSS describes how HTML elements should be displayed.
+
+Syntax:
+-------
+rule-set consists of a selector and a declaration block:
+
+CSS selectors are used to find HTML elements based on their element name, id, class.
+
+selector {//decleration block
+
+      property:"value";
+      property:"value";
+      property:"value";
+  
+}
+
+Example:
+--------
+p {
+  color: red;
+  text-align: center;
+}
+
+CSS colors:
+
+Colors are specified using predefined color names, or RGB, HEX;
+
+Example:
+<h1 style="background-color:red;"></h1>
+<p style="background-color:blue;"></p>
+
+Example with Text color:
+-----------------------
+<h1 style="color:red;"></h1>
+<p style="color:green"></p>
+
+CSS Background
+--------------
+In CSS mostly used background properties:
+
+background-color
+background-image
+background-repeat
+
+Example:
+div {
+  background-color: lightblue;
+}
+body {
+  background-image: url("../img/pic.jpg");
+  background-repeat:norepeat
+}
+
+CSS border:
+-----------
+The CSS border properties allow you to specify the style, width, and color of an element's border.
+
+Example:
+p {border-style: solid;}
+<p>lorem txt</p>
+
+CSS Margins:
+-------------
+The CSS margin properties are used to create space around elements, outside of any defined borders.
+
+Diffrent margin properties
+--------------------------
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+
+Example:
+-------
+div {
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: lightblue;
+}
+or
+div {
+  margin: 25px 50px 75px 100px;
+}
+
+margin-auto
+-----------
+div {
+  width:300px;
+  margin: auto;
+  border: 1px solid;
+}
+
+<div>lorem text</div>
+
+Csspading
+---------
+The CSS padding properties are used to generate space around an element's content, 
+inside of any defined borders.
+
+CSS padding properties
+----------------------
+padding-top
+padding-right
+padding-bottom
+padding-left
+
+Example:
+--------
+div {
+  border: 1px solid black;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+or
+div {
+  padding: 25px 50px 75px 100px;
+}
+
+BOXmodel in css:
+----------------
+
+Fonts:
+-----
+font-family
+font-style
+font-size
+
+Examples:
+--------
+p{
+ font-style: italic;
+ font-family: "Times New Roman", Times, serif;
+ font-size: 40px;
+}
+
+icons in css
+-----------
+
+
+position in css
+--------------
+The position property specifies positioning of the element:
+
+There are five different position values:
+
+static
+relative
+fixed
+absolute
+sticky
+
+position: static;
+HTML elements are positioned static by default.
+
+Static positioned elements are not affected by the top, bottom, left, and right properties.
+
+Ex:
+div.static {
+  position: static;
+  border: 3px solid
+}
+
+position: relative;
+
+An element with position: relative is positioned relative to its normal position.
+We can set top,bottom,left,right
+
+Ex:
+---
+div.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid
+}
+
+position: fixed;
+By using element with position: fixed; We can place element fixed at requried position 
+it always stays in the same place even if the page is scrolled. 
+The top, right, bottom, and left properties are used to position the element.
+
+Ex:
+div.fixed {
+  position: fixed;
+  bottom: 10;
+  right: 0;
+  width:20%;
+}
+
+position: absolute;
+-------------------
+By Using element with position: absolute; We can place element relative the nearst realative element
+The top, right, bottom, and left properties are used to position the element.
+
+Ex:
+div.obasalute {
+  position: absolute;
+  bottom: 10;
+  right: 0;
+  width:20%;
+}
+position: sticky;
+-----------------
+An element with position: sticky; is positioned based on the user's scroll position.
+The element with sticky position will stick to given position.
+
+div.sticky {
+    position: sticky;
+    top: 0px;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid;
+}
+CSS Overflow
+------------
+The CSS overflow property specifies how to handle the content when it overflows its block level container.
+
+The overflow property has the following values:
+
+visible - It specifies that overflow is not clipped. it renders outside the element's box.this is a default value.
+hidden - It specifies that the overflow is clipped, and rest of the content will be invisible.
+scroll - It specifies that the overflow is clipped, and a scroll bar is used to see the rest of the content.
+auto - It specifies that if overflow is clipped, a scroll bar is needed to see the rest of the content.
+
+Example:
+-------
+ .visible{
+           height: 50px;
+           width: 30%;
+           overflow: visible;
+           background: rebeccapurple
+       }
+   .hidden{
+           height: 50px;
+           width: 30%;
+           overflow: hidden;
+           background: rebeccapurple
+       }
+     .scroll{
+           height: 50px;
+           width: 30%;
+           overflow: scroll;
+           background: rebeccapurple
+       }
+     .auto{
+      height: 50px;
+      width: 30%;
+      overflow: auto;
+      background: rebeccapurple
+     }
+
+CSS Float
+---------
+The CSS float property  is used to push an element to the left or right in document.
+
+float properties:
+----------------
+
+The float property can have one of the following values:
+
+left - The element floats to the left of its container
+right- The element floats to the right of its container
+
+
+.flot{
+    height: 200px;
+    width: 30%;
+    float: left;
+    background: red;
+}
+
+CSS Dispaly property
+--------------------
+
+There 3 different inline properties
+1.display: block
+2.display: inline
+3.display: inline-block
+4.display:none;
+
+Block: it is default property to an element it allows element show in document. with full width..
+inline: It allows to arrange the elements in a line. with content width.. we can't able set height and width
+inline-block: it allows elements to align in line but we can set height and width.
+None: it allows elements to hide from the document.
+
+CSS Align:
+----------
+Its allows to set alignments of elements and text.
+
+Ex:text-align:center;
+
+Opacity
+-------
+The opacity property specifies the opacity/transparency of an element.
+
+Ex:opacity:0.5
+
+NavBars in CSS:
+---------------
+A navigation bar is basically a list of links, so using the <ul> and <li> elements makes perfect sense
+
+Example:
+--------
+.list{
+          padding: 0%;
+      }
+      .link{
+          display: inline;
+      }
+ <ul class="list">
+    <li class="link"><a href="home.html">Home</a></li>
+    <li class="link"><a href="New.html">News</a></li>
+    <li class="link"><a href="contact.html">Contact</a></li>
+    <li class="link"><a href="about.html">About</a></li>
+  </ul>
+
+CSS3 Topics
+-----------
+CSS border-radius Property
+------------------------
+The CSS border-radius property defines the radius of an element's corners.
+
+Ex:
+div{
+ border-radius:50%;
+}
+ we can also set border radius to perticular side 
+ Example:
+ -------
+ div{
+ border-bottom-left-radius:10px; 
+ }
+
+CSS Gradient:
+-------------
+CSS gradient is used to display smooth transition within two or more specified colors.
+
+There are two types of gradient in CSS3.
+
+Linear gradients
+Radial gradients
+
+CSS Linear Gradients
+To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render 
+
+Examples:
+--------
+#grad 1 {
+  background: linear-gradient(red, yellow);
+}
+#grad 2 {
+  background: linear-gradient(to right, red , blue);
+}
+#grad3 {
+  background: linear-gradient(to bottom right, red, green);
+}
+
+Angular gradients:
+-----------------
+If you want more control over the direction of the gradient, you can define an angle.
+
+#grad4 {
+  background: linear-gradient(0deg, red, yellow);
+}
+#grad 5{
+  background: linear-gradient(180deg, red, yellow);
+}
+CSS Radial Gradients
+A radial gradient is defined by its center.
+
+To create a radial gradient you must also define at least two color stops.
+
+Example:
+-------
+#grad 6{
+  background : radial-gradient(red, yellow, green);
+}
+
+Shadows:
+-------
+CSS Text Shadow
+The CSS text-shadow property applies shadow to text.
+Example:
+h1 {
+  text-shadow: 2px 2px 5px red;
+}
+
+CSS box-shadow Property
+The CSS box-shadow property applies shadow to elements.
+Example:
+div {
+  box-shadow: 10px 10px 5px grey;
+}
+h1 {
+  text-shadow: 0 0 3px #FF0000;
+}
+
+Web fonts in css:
+-----------------
+CSS allows to add web fonts by using @font-face
+our "own" fonts are defined within the CSS @font-face rule.
+
+Example:
+-------
+@font-face{
+    font-family:"OpenSans-Light" ;
+    src: url(../fonts/Open_Sans/OpenSans-Light.ttf);
+    font-size: normal;
+}
+
+CSS Transforms
+--------------
+Transformation is an effect that is used to change shape, size and position.
+CSS transforms allow you to translate, rotate, scale, and skew elements.
+CSS supports 2D and 3D transformations.
+
+CSS 2D Transforms
+-----------------
+The CSS 2D transforms are used to re-change the structure of the element.
+Different menthods in CSS 2D transform
+translate()
+rotate()
+scale()
+skewX()
+skewY()
+matrix()
+
+translate():The translate() method moves an element from its 
+             current position (according to the parameters given for the X-axis and the Y-axis).
+
+
+Example:
+div{
+transform: translate(50px,100px);
+}
+rotate():
+          The rotate() method rotates an element clockwise or counter-clockwise 
+          according to a given degree.
+
+Example:
+-------
+div{
+   transform: rotate(-30deg);
+}
+or
+div{
+   transform: rotate(10deg);
+}
+
+Scale():
+--------
+The scale() method increases or decreases the size of an element. with the multiple of given perametres.
+
+Example:
+--------
+div{
+ transform: scale(0.5, 0.5);
+}
+div{
+ transform: scale(5, 6);
+}
+The skewX() Method
+-----------------
+The skewX() method skews an element along the X-axis by the given angle.
+
+div{
+transform: skewX(10deg);
+}
+
+The skewY() Method
+-----------------
+The skewY() method skews an element along the Y-axis by the given angle.
+
+div{
+transform: skewY(10deg);
+}
+The skew() Method
+-----------------
+The skew() method skews an element along the X and Y-axis by the given angles.
+
+div{
+transform: skew(20deg, 10deg);
+}
+
+
+The matrix() method
+------------------
+The CSS matrix() method combines all the six 2D transform methods altogether. It allows you to rotate, scale, translate, and skew elements.
+
+Syntax:
+
+The parameters of matrix method: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+
+div{
+ transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+CSS 3D Transforms
+-----------------
+The CSS 3D transforms facilitates you to move an element to X-axis, Y-axis and Z-axis
+rotateX()
+rotateY()
+rotateZ()
+
+The rotateX() method rotates an element around its X-axis at a given degree.
+
+Example:
+div{
+transform: rotateX(150deg);
+}
+
+The rotateY() method rotates an element around its Y-axis at a given degree:
+
+div{
+ transform: rotateY(130deg);
+}
+
+The rotateZ() method rotates an element around its Z-axis at a given degree
+
+div{
+transform: rotateZ(90deg);
+}
+
+
+
+
+
+
+RESPONSIVE WEB DESING
+=====================
+The term Responsive Web Design was given by Ethan Marcotte. It facilitates you to use 
+fluid grids, flexible images, and media queries to progressively
+enhance a web page for different viewing contexts i.e. Desktop, Smartphone, Tablet etc.
+
+CSS Media Queries
+-----------------
+CSS Media query is a W3C recommendation and a CSS3 module which is used to adapt 
+to conditions such as screen resolution.
+
+Example:
+Smartphone screen ===> computer screen
+or
+computer screen  ====> Smartphone screen
+
+Example:
+--------
+@media only screen and (max-width: 500px) {  
+    body {  
+        background-color:green;  
+    }  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/

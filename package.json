@@ -1,0 +1,13 @@
+{
+  "name": "node-express-server-setup",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "datatables.net": "^1.10.19",
+    "datatables.net-dt": "^1.10.19",
+    "express": "3.5.1"
+  }
+}
